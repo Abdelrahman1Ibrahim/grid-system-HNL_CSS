@@ -12,9 +12,7 @@
     font-size: 14px;
     font-family: "Barlow Semi Condensed", sans-serif;
   }
-  main h1{
-    display: none;
-  }
+
   main .container{
    margin-block: 100px;
    margin-inline: 50px;
@@ -58,6 +56,7 @@ main .info .image .state{
     top: -20px;
     left: 53px;
  }
+
  main .info .text p:nth-child(1){
     font-size: 15px;
     font-weight: 600;
@@ -65,6 +64,20 @@ main .info .image .state{
     font-weight: 600;
     margin-bottom: 20px;
     line-height: 1.5;
+    position: relative;
+    z-index: 2;
+ }
+ main .info:nth-child(1) p:nth-child(1)::after{
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 600;
+    content: "\f10d"; 
+    position: absolute;
+    top: -90px;
+    left: 80%; 
+    transform: translateX(-50%); 
+    font-size: 130px; 
+    color: #ccc; 
+    z-index: -1; 
  }
  main .info .text p:nth-child(2){
   font-size: 14px;
