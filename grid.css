@@ -12,6 +12,9 @@
     font-size: 14px;
     font-family: "Barlow Semi Condensed", sans-serif;
   }
+  main h1{
+    display: none;
+  }
   main .container{
    margin-block: 100px;
    margin-inline: 50px;
